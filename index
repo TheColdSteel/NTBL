@@ -1,0 +1,76 @@
+<header>
+  <nav>
+    <div class="logo">Texas Bee Lease</div>
+    <ul>
+      <li><a href="#home" class="active">Home</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#tax-exemptions">Tax Exemptions</a></li>
+      <li><a href="#resources">Resources</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<section id="home" class="hero">
+  <h1>Lease Bees, Save on Taxes: Texas Ag Exemptions Made Simple</h1>
+  <p>Professional bee leasing and pollination services for Texas landowners. Qualify for agricultural tax valuations while boosting your land's productivity.</p>
+  <button onclick="scrollToSection('#services')">Get Started</button>
+</section>
+
+<section id="services">
+  <h2>Our Services</h2>
+  <div class="service-grid">
+    <div class="service-card">
+      <h3>Bee Hive Leasing</h3>
+      <p>Lease 6+ hives for 5-20 acres. Starting at $200/year per hive. Includes placement and basic monitoring.</p>
+    </div>
+    <div class="service-card">
+      <h3>Pollination Services</h3>
+      <p>Enhance crop yields with targeted pollination. Ideal for cotton, almonds, and more.</p>
+    </div>
+    <div class="service-card">
+      <h3>Hive Maintenance Packages</h3>
+      <p>Full-service care to ensure compliance and health. Multi-year options for exemption history.</p>
+    </div>
+  </div>
+</section>
+
+<section id="tax-exemptions">
+  <h2>Texas Ag Tax Exemptions</h2>
+  <p>Under Texas Property Tax Code Section 23.51, beekeeping qualifies as ag use if you maintain hives on qualifying land (min 5-20 acres, 5/7 years active). Estimate your savings below!</p>
+  <div class="calculator">
+    <label for="acres">Acreage:</label>
+    <input type="number" id="acres" min="5" value="10">
+    <label for="taxRate">Current Tax Rate (%):</label>
+    <input type="number" id="taxRate" step="0.01" value="1.5">
+    <button onclick="calculateSavings()">Calculate Savings</button>
+    <p id="result"></p>
+  </div>
+  <p>Disclaimer: Savings are estimates; consult your county appraiser for official valuation.</p>
+</section>
+
+<section id="resources">
+  <h2>Resources & Blog</h2>
+  <article>
+    <h3>2025 Beekeeping Trends for Texas Farms</h3>
+    <p>Explore sustainable practices and how they tie into tax benefits...</p>
+  </article>
+  <article>
+    <h3>Guide to Ag Exemptions with Bees</h3>
+    <p>Step-by-step on qualifying in counties like Hays or Travis...</p>
+  </article>
+</section>
+
+<section id="contact">
+  <h2>Contact Us</h2>
+  <form>
+    <input type="text" placeholder="Name" required>
+    <input type="email" placeholder="Email" required>
+    <textarea placeholder="Message" required></textarea>
+    <button type="submit">Send</button>
+  </form>
+</section>
+
+<footer>
+  <p>© 2025 Texas Bee Lease. All rights reserved. | <a href="#">Privacy Policy</a></p>
+</footer>
